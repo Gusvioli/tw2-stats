@@ -1,6 +1,6 @@
 from tw2_somar_pontos_da_tabela import somar_pontos_da_tabela
-from tw2_conversor_srt_para_numero_e_limpando import conversor_srt_para_numero_e_limpando
-from tw2_criar_json import criar_json
+from utils.tw2_conversor_srt_para_numero_e_limpando import conversor_srt_para_numero_e_limpando
+from utils.tw2_criar_json import criar_json
 import tw2_tabela_de_pontos as tw2_tabela_de_pontos
 
 selec = tw2_tabela_de_pontos.pegar_dados()[0]

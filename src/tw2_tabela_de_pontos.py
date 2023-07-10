@@ -1,5 +1,5 @@
 from time import sleep
-from tw2_criar_json import criar_json
+from utils.tw2_criar_json import criar_json
 import requests
 from parsel import Selector
 import numpy as np

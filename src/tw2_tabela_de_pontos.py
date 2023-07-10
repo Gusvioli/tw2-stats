@@ -3,7 +3,6 @@ from tw2_criar_json import criar_json
 import requests
 from parsel import Selector
 import numpy as np
-import json
 
 
 def pegar_dados():
@@ -13,10 +12,6 @@ def pegar_dados():
     selector = selector.css('table tr td::text').getall()
 
     return selector, selector_Title
-
-
-selec = pegar_dados()[0]
-selec_Title = pegar_dados()[1]
 
 
 def filtar_dados(selec):
@@ -38,8 +33,3 @@ def separar_dados(selec, selec_Title):
         i += 1
 
     return result_final
-
-
-se_dados = separar_dados(selec, selec_Title)
-
-criar_json(se_dados)

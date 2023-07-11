@@ -1,6 +1,7 @@
 import json
 
-def conversor_srt_para_numero_e_limpando(json_in):
+
+def conversor_srt__numero(json_in):
     with open(json_in, 'r') as json_file:
         data_dict = json.load(json_file)
 
